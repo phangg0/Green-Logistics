@@ -1,75 +1,57 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Logistics - Vận Chuyển Xanh, Gửi Trọn Niềm Tin</title>
-    <!-- Font Awesome -->
+    <title>Green Logistics - Green Transportation, Delivering Trust</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- HEADER CHUẨN (Phiên bản dành cho các file trong thư mục /pages/) -->
-<!-- HEADER CHUẨN (Dành cho các file trong thư mục /pages/) -->
 <header>
     <div class="container navbar">
-        <!-- Logo: Trỏ về trang chủ ở thư mục gốc -->
-        <a href="../index.html" class="logo">
+        <a href="index.html" class="logo">
             <i class="fas fa-leaf"></i> Green Logistics
         </a>
 
-        <!-- Nút Hamburger cho Mobile -->
         <div class="hamburger">
             <i class="fas fa-bars"></i>
         </div>
 
-        <!-- Menu Chính -->
         <ul class="nav-links">
-            <!-- 1. Trang Chủ (Lùi 1 cấp) -->
-            <li><a href="../index.html">Trang Chủ</a></li>
+            <li><a href="index.html">Home</a></li>
             
-            <!-- 2. Về Chúng Tôi (Cùng cấp) -->
-            <li><a href="pages/about.html">Về Chúng Tôi</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
             
-            <!-- 3. Dropdown Dịch Vụ -->
             <li class="dropdown-trigger">
-                <a href="services.html">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
+                <a href="pages/services.html">Services <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <!-- Các file này nằm trong thư mục services/ -->
-                    <li><a href="pages/services/same-day.html">Giao Trong Ngày</a></li>
-                    <li><a href="pages/services/cod.html">Dịch Vụ COD</a></li>
-                    <li><a href="pages/services/warehouse.html">Lưu Kho & Fulfillment</a></li>
+                    <li><a href="pages/services/same-day.html">Same-Day Delivery</a></li>
+                    <li><a href="pages/services/cod.html">COD Service</a></li>
+                    <li><a href="pages/services/warehouse.html">Warehousing & Fulfillment</a></li>
                 </ul>
             </li>
 
-            <!-- 4. Dropdown Giải Pháp -->
-             <li class="dropdown-trigger">
-                <a href="pages/solutions.html">Giải Pháp <i class="fas fa-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                    <!-- Các file này nằm trong thư mục solutions/ -->
-                    <li><a href="pages/solutions/online-shops.html">Cho Shop Online</a></li>
-                    <li><a href="pages/solutions/sme.html">Cho Doanh Nghiệp SME</a></li>
-                </ul>
-            </li>
-
-            <!-- 5. Dropdown Công Nghệ -->
             <li class="dropdown-trigger">
-                <a href="pages/technology.html">Công Nghệ <i class="fas fa-chevron-down"></i></a>
+                <a href="pages/solutions.html">Solutions <i class="fas fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
-                    <!-- File này nằm trong thư mục technology/ -->
-                    <li><a href="pages/technology/tracking-system.html">Tra Cứu Đơn Hàng</a></li>
+                    <li><a href="pages/solutions/online-shops.html">For Online Shops</a></li>
+                    <li><a href="pages/solutions/sme.html">For SMEs</a></li>
                 </ul>
             </li>
 
-            <!-- 6. Bảng Giá & Liên Hệ -->
-            <li><a href="pages/pricing.html">Bảng Giá</a></li>
-            <li><a href="pages/contact.html">Liên Hệ</a></li>
+            <li class="dropdown-trigger">
+                <a href="pages/technology.html">Technology <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="pages/technology/tracking-system.html">Order Tracking</a></li>
+                </ul>
+            </li>
 
-            <!-- 7. Mạng Xã Hội (Đã làm to hơn) -->
+            <li><a href="pages/pricing.html">Pricing</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+
             <li class="social-icons-group">
-                <!-- Bạn hãy thay link thật vào dấu # bên dưới -->
                 <a href="https://www.facebook.com/profile.php?id=61584382042340/" target="_blank" class="social-icon fb" title="Facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -84,58 +66,55 @@
     </div>
 </header>
 
-    <!-- BANNER / HERO -->
     <section class="hero">
         <div class="container">
-            <h1>Giao Hàng Thần Tốc Tại Đà Nẵng & Toàn Quốc</h1>
-            <p>Giải pháp logistics tối ưu chi phí cho Doanh nghiệp SME & Shop Online. Cam kết đúng giờ, hoàn tiền COD nhanh chóng.</p>
-            <a href="pages/contact.html" class="btn btn-primary">Đăng Ký Tư Vấn Ngay</a>
+            <h1>Express Delivery in Da Nang & Nationwide</h1>
+            <p>Cost-optimized logistics solutions for SMEs & Online Shops. Punctuality committed, rapid COD remittance.</p>
+            <a href="pages/contact.html" class="btn btn-primary">Get a Quote Now</a>
         </div>
     </section>
 
-    <!-- KEY FEATURES -->
     <section class="features">
         <div class="container">
             <div class="grid-3">
                 <div class="card">
                     <div class="card-icon"><i class="fas fa-bolt"></i></div>
-                    <h3>Siêu Tốc Độ</h3>
-                    <p>Lấy hàng sáng - Giao chiều trong nội thành Đà Nẵng. Kết nối liên tỉnh chỉ từ 24h.</p>
+                    <h3>Super Speed</h3>
+                    <p>Morning pickup - Afternoon delivery in Da Nang city. Inter-provincial connection from just 24h.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><i class="fas fa-hand-holding-dollar"></i></div>
-                    <h3>Tiết Kiệm Chi Phí</h3>
-                    <p>Bảng giá linh hoạt cho từng quy mô shop. Miễn phí lấy hàng tận nơi.</p>
+                    <h3>Cost Savings</h3>
+                    <p>Flexible pricing for every business scale. Free door-to-door pickup.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><i class="fas fa-mobile-screen"></i></div>
-                    <h3>App Thông Minh</h3>
-                    <p>Theo dõi đơn hàng Real-time, quản lý doanh thu và đối soát tự động ngay trên điện thoại.</p>
+                    <h3>Smart App</h3>
+                    <p>Real-time order tracking, revenue management, and automatic reconciliation right on your phone.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <h3>Green Logistics</h3>
-                    <p>Đối tác vận chuyển tin cậy của hơn 5000+ Shop Online và Doanh nghiệp tại miền Trung.</p>
+                    <p>Trusted shipping partner of over 5000+ Online Shops and Businesses in Central Vietnam.</p>
                 </div>
                 <div class="footer-col">
-                    <h3>Liên Kết Nhanh</h3>
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="pages/services.html">Dịch Vụ</a></li>
-                        <li><a href="pages/pricing.html">Bảng Giá</a></li>
-                        <li><a href="pages/technology/tracking-system.html">Tra cứu đơn</a></li>
+                        <li><a href="pages/services.html">Services</a></li>
+                        <li><a href="pages/pricing.html">Pricing</a></li>
+                        <li><a href="pages/technology/tracking-system.html">Track Order</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h3>Liên Hệ</h3>
+                    <h3>Contact Us</h3>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Liên Chiểu, Đà Nẵng</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lien Chieu, Da Nang</li>
                         <li><i class="fas fa-phone"></i> 1900 6868</li>
                         <li><i class="fas fa-envelope"></i> support@greenlogistics.vn</li>
                     </ul>

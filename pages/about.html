@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Về Chúng Tôi - Green Logistics</title>
+    <title>About Us - Green Logistics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Lùi 1 cấp để lấy CSS -->
     <link rel="stylesheet" href="../css/style.css">
     
-    <!-- CSS riêng cho trang About để chỉnh layout team -->
     <style>
         .team-section {
             padding: 60px 0;
             background: var(--light-bg);
         }
         
-        /* Style cho Leader (Nổi bật hơn) */
+        /* Leader Style (Highlighted) */
         .leader-container {
             display: flex;
             justify-content: center;
@@ -27,7 +25,7 @@
             padding: 40px;
             border-radius: 15px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(46, 139, 87, 0.2); /* Bóng màu xanh */
+            box-shadow: 0 10px 30px rgba(46, 139, 87, 0.2);
             max-width: 400px;
             border-top: 5px solid var(--primary-color);
             transition: transform 0.3s;
@@ -46,7 +44,7 @@
             border: 4px solid var(--primary-color);
         }
 
-        /* Grid cho 4 thành viên (Responsive) */
+        /* Grid for 4 members */
         .members-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -65,7 +63,6 @@
 </head>
 <body>
 
-    <!-- HEADER CHUẨN (Đã cập nhật social icons to hơn) -->
     <header>
         <div class="container navbar">
             <a href="../index.html" class="logo">
@@ -77,35 +74,35 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="../index.html">Trang Chủ</a></li>
-                <li><a href="about.html" class="active">Về Chúng Tôi</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
                 
                 <li class="dropdown-trigger">
-                    <a href="services.html">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
+                    <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="services/same-day.html">Giao Trong Ngày</a></li>
-                        <li><a href="services/cod.html">Dịch Vụ COD</a></li>
-                        <li><a href="services/warehouse.html">Lưu Kho & Fulfillment</a></li>
+                        <li><a href="services/same-day.html">Same-Day Delivery</a></li>
+                        <li><a href="services/cod.html">COD Service</a></li>
+                        <li><a href="services/warehouse.html">Warehousing & Fulfillment</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown-trigger">
-                    <a href="solutions.html">Giải Pháp <i class="fas fa-chevron-down"></i></a>
+                    <a href="solutions.html">Solutions <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="solutions/online-shops.html">Cho Shop Online</a></li>
-                        <li><a href="solutions/sme.html">Cho Doanh Nghiệp SME</a></li>
+                        <li><a href="solutions/online-shops.html">For Online Shops</a></li>
+                        <li><a href="solutions/sme.html">For SMEs</a></li>
                     </ul>
                 </li>
 
                 <li class="dropdown-trigger">
-                    <a href="technology.html">Công Nghệ <i class="fas fa-chevron-down"></i></a>
+                    <a href="technology.html">Technology <i class="fas fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="technology/tracking-system.html">Tra Cứu Đơn Hàng</a></li>
+                        <li><a href="technology/tracking-system.html">Order Tracking</a></li>
                     </ul>
                 </li>
 
-                <li><a href="pricing.html">Bảng Giá</a></li>
-                <li><a href="contact.html">Liên Hệ</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
                 <li class="social-icons-group">
                     <a href="https://www.facebook.com/" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
@@ -118,46 +115,42 @@
 
     <div class="page-header">
         <div class="container">
-            <h1>Đội Ngũ Green Logistics</h1>
-            <p>Những con người kiến tạo chuỗi cung ứng xanh</p>
+            <h1>Green Logistics Team</h1>
+            <p>The people building a sustainable supply chain</p>
         </div>
     </div>
 
-    <!-- Section: Giới thiệu chung -->
     <section class="container" style="padding: 60px 20px;">
         <div class="grid-3" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 50px;">
             <div>
                 <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Green Logistics Team" style="border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); width: 100%;">
             </div>
             <div>
-                <h2 style="color: var(--primary-color); margin-bottom: 20px;">Sứ Mệnh Của Nhóm 3</h2>
-                <p style="margin-bottom: 15px;">Chúng tôi là nhóm sinh viên đam mê với ngành Logistics và khát khao ứng dụng công nghệ để giải quyết bài toán môi trường.</p>
-                <p>Green Logistics không chỉ là một dự án môn học, mà là tầm nhìn về một tương lai nơi việc vận chuyển hàng hóa không để lại dấu chân carbon.</p>
+                <h2 style="color: var(--primary-color); margin-bottom: 20px;">Mission of Group 3</h2>
+                <p style="margin-bottom: 15px;">We are a group of students passionate about Logistics, aspiring to apply technology to solve environmental challenges.</p>
+                <p>Green Logistics is not just a course project, but a vision of a future where freight transport leaves no carbon footprint.</p>
                 <br>
                 <ul style="list-style: none;">
-                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Sáng tạo:</strong> Luôn tìm kiếm giải pháp mới.</li>
-                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Đoàn kết:</strong> Sức mạnh đến từ sự hợp tác.</li>
-                    <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Trách nhiệm:</strong> Cam kết với cộng đồng và môi trường.</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Innovation:</strong> Constantly seeking new solutions.</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Unity:</strong> Strength comes from collaboration.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Responsibility:</strong> Committed to the community and environment.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- TEAM SECTION (1 TRÊN 4 DƯỚI) -->
     <section class="team-section">
         <div class="container">
-            <h2 class="section-title">Thành Viên Nhóm 3</h2>
+            <h2 class="section-title">Team Members - Group 3</h2>
             
-            <!-- 1. VỊ TRÍ LEADER (Ở TRÊN CÙNG) -->
             <div class="leader-container">
                 <div class="leader-card">
-                    <!-- THAY LINK ẢNH LEADER VÀO DÒNG DƯỚI -->
                     <img src="../images/z7286461567535_80cc36e75b07d37f3592490adfa34b7b.jpg" alt="Leader" class="leader-avatar">
                     
-                    <h3 style="color: var(--primary-color); margin-bottom: 5px;">Huỳnh Tấn Á</h3>
-                    <p style="color: var(--accent-color); font-weight: bold; margin-bottom: 15px;">CEO&Founder</p>
+                    <h3 style="color: var(--primary-color); margin-bottom: 5px;">Huynh Tan A</h3>
+                    <p style="color: var(--accent-color); font-weight: bold; margin-bottom: 15px;">CEO & Founder</p>
                     <p style="color: #666; font-size: 0.9rem;">
-                        "Chịu trách nhiệm quản lý chung, lên kế hoạch chiến lược và điều phối dự án. Đảm bảo mọi mục tiêu đều đạt được đúng hạn."
+                        "Responsible for general management, strategic planning, and project coordination. Ensuring all goals are met on time."
                     </p>
                     <div style="margin-top: 15px;">
                         <a href="#" style="color: #333; margin: 0 5px;"><i class="fab fa-linkedin"></i></a>
@@ -166,38 +159,29 @@
                 </div>
             </div>
 
-            <!-- 2. VỊ TRÍ 4 THÀNH VIÊN CÒN LẠI (Ở DƯỚI) -->
             <div class="members-grid">
                 
-                <!-- Thành viên 1 -->
                 <div class="card" style="text-align: center; padding: 30px;">
-                    <!-- THAY LINK ẢNH THÀNH VIÊN 1 VÀO DÒNG DƯỚI -->
                     <img src="../images/z7286461568489_107c914dea0261f9885b6502e3ef876f.jpg" alt="Member 1" class="member-avatar">
-                    <h4>Thân Thị Ngọc Diễm</h4>
+                    <h4>Than Thi Ngoc Diem</h4>
                     <p style="color: #888; font-size: 0.9rem;">Logistics Analyst</p>
                 </div>
 
-                <!-- Thành viên 2 -->
                 <div class="card" style="text-align: center; padding: 30px;">
-                    <!-- THAY LINK ẢNH THÀNH VIÊN 2 VÀO DÒNG DƯỚI -->
                     <img src="../images/z7286461608008_bc919437833153f75024d36a8eaef905.jpg" alt="Member 2" class="member-avatar">
-                    <h4>Phan Đức Bảo Uyên</h4>
+                    <h4>Phan Duc Bao Uyen</h4>
                     <p style="color: #888; font-size: 0.9rem;">Marketing Manager</p>
                 </div>
 
-                <!-- Thành viên 3 -->
                 <div class="card" style="text-align: center; padding: 30px;">
-                    <!-- THAY LINK ẢNH THÀNH VIÊN 3 VÀO DÒNG DƯỚI -->
                     <img src="../images/z7286461645513_7f0d80bb6d444d4a6d754d856a0f88bd.jpg" alt="Member 3" class="member-avatar">
-                    <h4>Hồ Lê Tấn Phát</h4>
+                    <h4>Ho Le Tan Phat</h4>
                     <p style="color: #888; font-size: 0.9rem;">Head of Sales</p>
                 </div>
 
-                <!-- Thành viên 4 -->
                 <div class="card" style="text-align: center; padding: 30px;">
-                    <!-- THAY LINK ẢNH THÀNH VIÊN 4 VÀO DÒNG DƯỚI -->
                     <img src="../images/z7286471791945_a4861d87dd1375b19169661a23d71695.jpg" alt="Member 4" class="member-avatar">
-                    <h4>Phạm Tuấn Phong</h4>
+                    <h4>Pham Tuan Phong</h4>
                     <p style="color: #888; font-size: 0.9rem;">Fleet Manager</p>
                 </div>
 
@@ -211,7 +195,6 @@
         </div>
     </footer>
     
-    <!-- Script Menu -->
     <script src="../js/script.js"></script>
 </body>
 </html>
