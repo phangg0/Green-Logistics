@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về Chúng Tôi - Green Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lùi 1 cấp để lấy CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- CSS riêng cho trang About để chỉnh layout team -->
+    <style>
+        .team-section {
+            padding: 60px 0;
+            background: var(--light-bg);
+        }
+        
+        /* Style cho Leader (Nổi bật hơn) */
+        .leader-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .leader-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(46, 139, 87, 0.2); /* Bóng màu xanh */
+            max-width: 400px;
+            border-top: 5px solid var(--primary-color);
+            transition: transform 0.3s;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .leader-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid var(--primary-color);
+        }
+
+        /* Grid cho 4 thành viên (Responsive) */
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            border: 3px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER CHUẨN (Đã cập nhật social icons to hơn) -->
+    <header>
+        <div class="container navbar">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-leaf"></i> Green Logistics
+            </a>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="about.html" class="active">Về Chúng Tôi</a></li>
+                
+                <li class="dropdown-trigger">
+                    <a href="services.html">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="services/same-day.html">Giao Trong Ngày</a></li>
+                        <li><a href="services/cod.html">Dịch Vụ COD</a></li>
+                        <li><a href="services/warehouse.html">Lưu Kho & Fulfillment</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-trigger">
+                    <a href="solutions.html">Giải Pháp <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="solutions/online-shops.html">Cho Shop Online</a></li>
+                        <li><a href="solutions/sme.html">Cho Doanh Nghiệp SME</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-trigger">
+                    <a href="technology.html">Công Nghệ <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="technology/tracking-system.html">Tra Cứu Đơn Hàng</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="pricing.html">Bảng Giá</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+
+                <li class="social-icons-group">
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="social-icon tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon insta"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Đội Ngũ Green Logistics</h1>
+            <p>Những con người kiến tạo chuỗi cung ứng xanh</p>
+        </div>
+    </div>
+
+    <!-- Section: Giới thiệu chung -->
+    <section class="container" style="padding: 60px 20px;">
+        <div class="grid-3" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 50px;">
+            <div>
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Green Logistics Team" style="border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); width: 100%;">
+            </div>
+            <div>
+                <h2 style="color: var(--primary-color); margin-bottom: 20px;">Sứ Mệnh Của Nhóm 4</h2>
+                <p style="margin-bottom: 15px;">Chúng tôi là nhóm sinh viên đam mê với ngành Logistics và khát khao ứng dụng công nghệ để giải quyết bài toán môi trường.</p>
+                <p>Green Logistics không chỉ là một dự án môn học, mà là tầm nhìn về một tương lai nơi việc vận chuyển hàng hóa không để lại dấu chân carbon.</p>
+                <br>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Sáng tạo:</strong> Luôn tìm kiếm giải pháp mới.</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Đoàn kết:</strong> Sức mạnh đến từ sự hợp tác.</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--primary-color);"></i> <strong>Trách nhiệm:</strong> Cam kết với cộng đồng và môi trường.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION (1 TRÊN 4 DƯỚI) -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title">Thành Viên Nhóm 4</h2>
+            
+            <!-- 1. VỊ TRÍ LEADER (Ở TRÊN CÙNG) -->
+            <div class="leader-container">
+                <div class="leader-card">
+                    <!-- THAY LINK ẢNH LEADER VÀO DÒNG DƯỚI -->
+                    <img src="../logistics-xanh-17133653985821750940633.jpg" alt="Leader" class="leader-avatar">
+                    
+                    <h3 style="color: var(--primary-color); margin-bottom: 5px;">Nguyễn Văn A</h3>
+                    <p style="color: var(--accent-color); font-weight: bold; margin-bottom: 15px;">Trưởng Nhóm (Leader)</p>
+                    <p style="color: #666; font-size: 0.9rem;">
+                        "Chịu trách nhiệm quản lý chung, lên kế hoạch chiến lược và điều phối dự án. Đảm bảo mọi mục tiêu đều đạt được đúng hạn."
+                    </p>
+                    <div style="margin-top: 15px;">
+                        <a href="#" style="color: #333; margin: 0 5px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: #333; margin: 0 5px;"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. VỊ TRÍ 4 THÀNH VIÊN CÒN LẠI (Ở DƯỚI) -->
+            <div class="members-grid">
+                
+                <!-- Thành viên 1 -->
+                <div class="card" style="text-align: center; padding: 30px;">
+                    <!-- THAY LINK ẢNH THÀNH VIÊN 1 VÀO DÒNG DƯỚI -->
+                    <img src="https://images.unsplash.com/photo-1573496359-7013ac2bebb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" alt="Member 1" class="member-avatar">
+                    <h4>Trần Thị B</h4>
+                    <p style="color: #888; font-size: 0.9rem;">Content Marketing</p>
+                </div>
+
+                <!-- Thành viên 2 -->
+                <div class="card" style="text-align: center; padding: 30px;">
+                    <!-- THAY LINK ẢNH THÀNH VIÊN 2 VÀO DÒNG DƯỚI -->
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" alt="Member 2" class="member-avatar">
+                    <h4>Lê Văn C</h4>
+                    <p style="color: #888; font-size: 0.9rem;">Web Developer</p>
+                </div>
+
+                <!-- Thành viên 3 -->
+                <div class="card" style="text-align: center; padding: 30px;">
+                    <!-- THAY LINK ẢNH THÀNH VIÊN 3 VÀO DÒNG DƯỚI -->
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" alt="Member 3" class="member-avatar">
+                    <h4>Phạm Thị D</h4>
+                    <p style="color: #888; font-size: 0.9rem;">Designer</p>
+                </div>
+
+                <!-- Thành viên 4 -->
+                <div class="card" style="text-align: center; padding: 30px;">
+                    <!-- THAY LINK ẢNH THÀNH VIÊN 4 VÀO DÒNG DƯỚI -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" alt="Member 4" class="member-avatar">
+                    <h4>Hoàng Văn E</h4>
+                    <p style="color: #888; font-size: 0.9rem;">Research Analyst</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container copyright">
+            <p>&copy; 2025 Group 4 - Green Logistics Project.</p>
+        </div>
+    </footer>
+    
+    <!-- Script Menu -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

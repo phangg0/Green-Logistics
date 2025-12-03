@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch Vụ - Green Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lùi ra 1 cấp để lấy CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- HEADER CHUẨN (Dành cho các file trong thư mục /pages/) -->
+<header>
+    <div class="container navbar">
+        <!-- Logo: Trỏ về trang chủ ở thư mục gốc -->
+        <a href="../index.html" class="logo">
+            <i class="fas fa-leaf"></i> Green Logistics
+        </a>
+
+        <!-- Nút Hamburger cho Mobile -->
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Menu Chính -->
+        <ul class="nav-links">
+            <!-- 1. Trang Chủ (Lùi 1 cấp) -->
+            <li><a href="../index.html">Trang Chủ</a></li>
+            
+            <!-- 2. Về Chúng Tôi (Cùng cấp) -->
+            <li><a href="about.html">Về Chúng Tôi</a></li>
+            
+            <!-- 3. Dropdown Dịch Vụ -->
+            <li class="dropdown-trigger">
+                <a href="services.html">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- Các file này nằm trong thư mục services/ -->
+                    <li><a href="services/same-day.html">Giao Trong Ngày</a></li>
+                    <li><a href="services/cod.html">Dịch Vụ COD</a></li>
+                    <li><a href="services/warehouse.html">Lưu Kho & Fulfillment</a></li>
+                </ul>
+            </li>
+
+            <!-- 4. Dropdown Giải Pháp -->
+             <li class="dropdown-trigger">
+                <a href="solutions.html">Giải Pháp <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- Các file này nằm trong thư mục solutions/ -->
+                    <li><a href="solutions/online-shops.html">Cho Shop Online</a></li>
+                    <li><a href="solutions/sme.html">Cho Doanh Nghiệp SME</a></li>
+                </ul>
+            </li>
+
+            <!-- 5. Dropdown Công Nghệ -->
+            <li class="dropdown-trigger">
+                <a href="technology.html">Công Nghệ <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- File này nằm trong thư mục technology/ -->
+                    <li><a href="technology/tracking-system.html">Tra Cứu Đơn Hàng</a></li>
+                </ul>
+            </li>
+
+            <!-- 6. Bảng Giá & Liên Hệ -->
+            <li><a href="pricing.html">Bảng Giá</a></li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+
+            <!-- 7. Mạng Xã Hội (Đã làm to hơn) -->
+            <li class="social-icons-group">
+                <!-- Bạn hãy thay link thật vào dấu # bên dưới -->
+                <a href="https://www.facebook.com/profile.php?id=61584382042340/" target="_blank" class="social-icon fb" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@logisticgreengroup/" target="_blank" class="social-icon tiktok" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/greenn_logistics/" target="_blank" class="social-icon insta" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Dịch Vụ Của Chúng Tôi</h1>
+            <p>Giải pháp vận chuyển đa dạng đáp ứng mọi nhu cầu</p>
+        </div>
+    </div>
+
+    <section class="container" style="padding: 60px 20px;">
+        <div class="grid-3">
+            <div class="card">
+                <h3>Giao Hàng Hỏa Tốc</h3>
+                <p>Phù hợp cho chứng từ, hàng gấp. Cam kết giao trong 4H nội thành.</p>
+                <br>
+                <a href="services/same-day.html" class="btn btn-secondary">Xem Chi Tiết</a>
+            </div>
+            <div class="card">
+                <h3>Thu Hộ COD</h3>
+                <p>Miễn phí thu hộ, đối soát tiền vào thứ 2, 4, 6 hàng tuần.</p>
+                <br>
+                <a href="services/cod.html" class="btn btn-secondary">Xem Chi Tiết</a>
+            </div>
+            <div class="card">
+                <h3>Fulfillment & Kho</h3>
+                <p>Lưu kho, đóng gói và xử lý đơn hàng tự động cho Shop Online.</p>
+                <br>
+                <a href="services/warehouse.html" class="btn btn-secondary">Xem Chi Tiết</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (Giữ nguyên cấu trúc, sửa link nếu cần) -->
+    <footer>
+        <div class="container copyright">
+            <p>&copy; 2025 Group 4 - Green Logistics Project.</p>
+        </div>
+    </footer>
+
+    <!-- Lùi ra 1 cấp để lấy JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Giá - Green Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!-- HEADER CHUẨN (Dành cho các file trong thư mục /pages/) -->
+<header>
+    <div class="container navbar">
+        <!-- Logo: Trỏ về trang chủ ở thư mục gốc -->
+        <a href="../index.html" class="logo">
+            <i class="fas fa-leaf"></i> Green Logistics
+        </a>
+
+        <!-- Nút Hamburger cho Mobile -->
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Menu Chính -->
+        <ul class="nav-links">
+            <!-- 1. Trang Chủ (Lùi 1 cấp) -->
+            <li><a href="../index.html">Trang Chủ</a></li>
+            
+            <!-- 2. Về Chúng Tôi (Cùng cấp) -->
+            <li><a href="about.html">Về Chúng Tôi</a></li>
+            
+            <!-- 3. Dropdown Dịch Vụ -->
+            <li class="dropdown-trigger">
+                <a href="services.html">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- Các file này nằm trong thư mục services/ -->
+                    <li><a href="services/same-day.html">Giao Trong Ngày</a></li>
+                    <li><a href="services/cod.html">Dịch Vụ COD</a></li>
+                    <li><a href="services/warehouse.html">Lưu Kho & Fulfillment</a></li>
+                </ul>
+            </li>
+
+            <!-- 4. Dropdown Giải Pháp -->
+             <li class="dropdown-trigger">
+                <a href="solutions.html">Giải Pháp <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- Các file này nằm trong thư mục solutions/ -->
+                    <li><a href="solutions/online-shops.html">Cho Shop Online</a></li>
+                    <li><a href="solutions/sme.html">Cho Doanh Nghiệp SME</a></li>
+                </ul>
+            </li>
+
+            <!-- 5. Dropdown Công Nghệ -->
+            <li class="dropdown-trigger">
+                <a href="technology.html">Công Nghệ <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- File này nằm trong thư mục technology/ -->
+                    <li><a href="technology/tracking-system.html">Tra Cứu Đơn Hàng</a></li>
+                </ul>
+            </li>
+
+            <!-- 6. Bảng Giá & Liên Hệ -->
+            <li><a href="pricing.html">Bảng Giá</a></li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+
+            <!-- 7. Mạng Xã Hội (Đã làm to hơn) -->
+            <li class="social-icons-group">
+                <!-- Bạn hãy thay link thật vào dấu # bên dưới -->
+                <a href="https://www.facebook.com/profile.php?id=61584382042340/" target="_blank" class="social-icon fb" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@logisticgreengroup/" target="_blank" class="social-icon tiktok" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/greenn_logistics/" target="_blank" class="social-icon insta" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Bảng Giá Dịch Vụ</h1>
+            <p>Minh bạch - Tiết kiệm - Không phụ phí ẩn</p>
+        </div>
+    </div>
+
+    <section class="container" style="padding: 60px 20px;">
+        <div class="pricing-table">
+            <!-- Gói Tiết Kiệm -->
+            <div class="price-card">
+                <h3>Tiết Kiệm</h3>
+                <div class="price">15k <span>/ đơn</span></div>
+                <p style="color: #666; margin-bottom: 20px;">Dành cho shop nhỏ (< 100 đơn/tháng)</p>
+                <ul class="price-features">
+                    <li><i class="fas fa-check"></i> Nội thành Đà Nẵng</li>
+                    <li><i class="fas fa-check"></i> Giao trong 24h</li>
+                    <li><i class="fas fa-check"></i> Miễn phí thu hộ dưới 3tr</li>
+                    <li><i class="fas fa-times" style="color: #ccc;"></i> Lưu kho miễn phí</li>
+                </ul>
+                <a href="contact.html" class="btn btn-secondary" style="background: #666;">Chọn Gói Này</a>
+            </div>
+
+            <!-- Gói Tiêu Chuẩn (Nổi bật) -->
+            <div class="price-card featured">
+                <h3>Tiêu Chuẩn</h3>
+                <div class="price">12k <span>/ đơn</span></div>
+                <p style="color: #666; margin-bottom: 20px;">Dành cho shop ổn định (> 300 đơn/tháng)</p>
+                <ul class="price-features">
+                    <li><i class="fas fa-check"></i> <strong>Đồng giá</strong> nội thành</li>
+                    <li><i class="fas fa-check"></i> Giao sáng - chiều nhận</li>
+                    <li><i class="fas fa-check"></i> Miễn phí thu hộ 100%</li>
+                    <li><i class="fas fa-check"></i> Đối soát 3 lần/tuần</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Phổ Biến Nhất</a>
+            </div>
+
+            <!-- Gói Doanh Nghiệp -->
+            <div class="price-card">
+                <h3>Hỏa Tốc</h3>
+                <div class="price">30k <span>/ đơn</span></div>
+                <p style="color: #666; margin-bottom: 20px;">Giao ngay lập tức (Instant)</p>
+                <ul class="price-features">
+                    <li><i class="fas fa-check"></i> Giao trong 2 giờ</li>
+                    <li><i class="fas fa-check"></i> Ưu tiên lấy hàng</li>
+                    <li><i class="fas fa-check"></i> Bảo hiểm 100%</li>
+                    <li><i class="fas fa-check"></i> Hỗ trợ 1-1 riêng biệt</li>
+                </ul>
+                <a href="contact.html" class="btn btn-secondary">Chọn Gói Này</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container copyright">
+            <p>&copy; 2025 Group 4 - Green Logistics Project.</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

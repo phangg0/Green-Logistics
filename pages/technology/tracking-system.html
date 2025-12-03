@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra Cứu Vận Đơn - Green Logistics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lùi 2 cấp thư mục -->
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+<!-- HEADER CHUẨN (Dành cho các file trong thư mục /pages/) -->
+<header>
+    <div class="container navbar">
+        <!-- Logo: Trỏ về trang chủ ở thư mục gốc -->
+        <a href="../index.html" class="logo">
+            <i class="fas fa-leaf"></i> Green Logistics
+        </a>
+
+        <!-- Nút Hamburger cho Mobile -->
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <!-- Menu Chính -->
+        <ul class="nav-links">
+            <!-- 1. Trang Chủ (Lùi 1 cấp) -->
+            <li><a href="../../index.html">Trang Chủ</a></li>
+            
+            <!-- 2. Về Chúng Tôi (Cùng cấp) -->
+            <li><a href="../about.html">Về Chúng Tôi</a></li>
+            
+            <!-- 3. Dropdown Dịch Vụ -->
+            <li class="dropdown-trigger">
+                <a href="../services.html">Dịch Vụ <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- Các file này nằm trong thư mục services/ -->
+                    <li><a href="../services/same-day.html">Giao Trong Ngày</a></li>
+                    <li><a href="../services/cod.html">Dịch Vụ COD</a></li>
+                    <li><a href="../services/warehouse.html">Lưu Kho & Fulfillment</a></li>
+                </ul>
+            </li>
+
+            <!-- 4. Dropdown Giải Pháp -->
+             <li class="dropdown-trigger">
+                <a href="solutions.html">Giải Pháp <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- Các file này nằm trong thư mục solutions/ -->
+                    <li><a href="../solutions/online-shops.html">Cho Shop Online</a></li>
+                    <li><a href="../solutions/sme.html">Cho Doanh Nghiệp SME</a></li>
+                </ul>
+            </li>
+
+            <!-- 5. Dropdown Công Nghệ -->
+            <li class="dropdown-trigger">
+                <a href="../technology.html">Công Nghệ <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <!-- File này nằm trong thư mục technology/ -->
+                    <li><a href="../technology/tracking-system.html">Tra Cứu Đơn Hàng</a></li>
+                </ul>
+            </li>
+
+            <!-- 6. Bảng Giá & Liên Hệ -->
+            <li><a href="../pricing.html">Bảng Giá</a></li>
+            <li><a href="../contact.html">Liên Hệ</a></li>
+
+            <!-- 7. Mạng Xã Hội (Đã làm to hơn) -->
+            <li class="social-icons-group">
+                <!-- Bạn hãy thay link thật vào dấu # bên dưới -->
+                <a href="https://www.facebook.com/profile.php?id=61584382042340/" target="_blank" class="social-icon fb" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.tiktok.com/@logisticgreengroup/" target="_blank" class="social-icon tiktok" title="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com/greenn_logistics/" target="_blank" class="social-icon insta" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Hệ Thống Tracking Real-time</h1>
+            <p>Theo dõi hành trình đơn hàng mọi lúc mọi nơi</p>
+        </div>
+    </div>
+
+    <section class="container" style="padding: 60px 20px;">
+        <div class="tracking-box-large">
+            <h2 style="margin-bottom: 20px; color: var(--primary-color);">Nhập Mã Vận Đơn</h2>
+            <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                <input type="text" id="trackingCode" class="form-control" placeholder="Ví dụ: GR123456VN">
+                <button onclick="checkOrder()" class="btn btn-primary">Tra Cứu</button>
+            </div>
+            
+            <!-- Khu vực hiển thị kết quả -->
+            <div id="trackingResult" style="display: none; text-align: left; background: white; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+                <h4 style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 10px;">Kết Quả Tra Cứu: <span id="resultCode" style="color: var(--accent-color);"></span></h4>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 10px; color: green;"><i class="fas fa-check-circle"></i> <strong>Đã giao thành công</strong> - 14:30 Hôm nay</li>
+                    <li style="margin-bottom: 10px; color: #666;"><i class="fas fa-truck"></i> Đang giao hàng - 08:00 Hôm nay</li>
+                    <li style="margin-bottom: 10px; color: #666;"><i class="fas fa-warehouse"></i> Đã nhập kho Đà Nẵng - 18:00 Hôm qua</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container copyright">
+            <p>&copy; 2025 Group 4 - Green Logistics Project.</p>
+        </div>
+    </footer>
+    <script src="../../js/script.js"></script>
+    
+    <!-- Script giả lập tra cứu -->
+    <script>
+        function checkOrder() {
+            const code = document.getElementById('trackingCode').value;
+            if(code.trim() === "") {
+                alert("Vui lòng nhập mã vận đơn!");
+                return;
+            }
+            // Giả lập loading
+            document.getElementById('trackingResult').style.display = 'none';
+            setTimeout(() => {
+                document.getElementById('resultCode').innerText = code;
+                document.getElementById('trackingResult').style.display = 'block';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
